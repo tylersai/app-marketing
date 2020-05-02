@@ -21,10 +21,18 @@ a {
 }
 
 .default-gradient {
-  background-image: linear-gradient(to bottom right,  rgb(8, 167, 221), rgb(0, 215, 221));
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(8, 167, 221),
+    rgb(0, 215, 221)
+  );
 }
 .reverse-gradient {
-  background-image: linear-gradient(to top right,  rgb(8, 167, 221), rgb(0, 215, 221));
+  background-image: linear-gradient(
+    to top right,
+    rgb(8, 167, 221),
+    rgb(0, 215, 221)
+  );
 }
 
 .text-white {
@@ -68,6 +76,12 @@ section:nth-child(even) {
 }
 section:nth-child(odd) {
   background-color: #fafafa;
+}
+
+h1 {
+  font-family: Poppins;
+  font-size: 32px;
+  letter-spacing: 1px;
 }
 
 /* Header */
@@ -131,8 +145,6 @@ section.intro .wrapper {
   align-items: center;
 }
 section.intro .wrapper > div:first-child h1 {
-  font-family: Poppins;
-  font-size: 32px;
   margin-top: 35px;
   margin-bottom: 10px;
 }
@@ -174,4 +186,11 @@ section.intro a.google-play {
 section.intro a.google-play:hover {
   border-color: var(--lightgray);
   background-color: var(--lightgray);
+}
+
+.what-we-do {
+  letter-spacing: 1px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #b0b0b0;
 }
