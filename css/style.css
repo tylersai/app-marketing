@@ -1,6 +1,6 @@
 :root {
   --white: #fafafa;
-  --lightgray: #e0e0e0;
+  --lightgray: #eaeaea;
   --black: #1a1f1f;
   --darkgray: #2a2f2f;
   --blue: rgb(8, 167, 221);
@@ -119,4 +119,59 @@ header nav > li:first-child .btn:hover {
 header nav .btn:hover {
   color: var(--green);
   background-color: var(--white);
+}
+
+section.intro {
+  max-height: 100vh;
+}
+section.intro .wrapper {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.intro .wrapper > div:first-child h1 {
+  font-family: Poppins;
+  font-size: 32px;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+section.intro .wrapper > div:last-child {
+  display: flex;
+  justify-content: center;
+}
+
+section.intro .img-phone {
+  width: 80%;
+  height: 80%;
+}
+
+section.intro a.btn {
+  margin: 70px 20px 0 20px;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  border-radius: 3px;
+  padding: 10px 30px;
+  border: 2px solid var(--darkgray);
+}
+section.intro a.btn > i {
+  background-color: inherit;
+  color: inherit;
+  transition: inherit;
+}
+
+section.intro a.apple-store {
+  background-color: var(--darkgray);
+}
+section.intro a.apple-store:hover {
+  border-color: var(--lightgray);
+  background-color: var(--lightgray);
+  color: var(--darkgray);
+}
+section.intro a.google-play {
+  color: var(--darkgray);
+}
+section.intro a.google-play:hover {
+  border-color: var(--lightgray);
+  background-color: var(--lightgray);
 }
