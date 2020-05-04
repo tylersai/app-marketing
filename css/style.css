@@ -218,6 +218,7 @@ section.feature h1 {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  margin: 10px;
   border-radius: 20px;
   transition: all 300ms ease-in;
 }
