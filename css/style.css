@@ -285,7 +285,7 @@ section.feature h1 {
   height: 3px;
   border-radius: 1px;
   background-color: var(--green);
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .wrapper {
@@ -348,17 +348,24 @@ section.boostup .wrapper .boostup-wrap{
   justify-content: center;
   align-items: center;
 }
+.col {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
 .adv-card {
   max-width: 250px;
   max-height: 300px;
-  margin: 15px 10px;
+  margin: 2vmin;
   padding: 40px 25px;
   border-radius: 15px;
   background-color: var(--blue);
   overflow: hidden;
 }
 .adv-card > * {
-  color: var(--lightgray);
+  color: var(--white);
 }
 .adv-card > h3 {
   font-family: Poppins;
@@ -366,4 +373,5 @@ section.boostup .wrapper .boostup-wrap{
   font-size: 1.3rem;
   letter-spacing: 1px;
   margin: 15px 0;
+  white-space: nowrap;
 }
