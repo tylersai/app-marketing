@@ -289,7 +289,7 @@ section.feature h1 {
   margin-bottom: 15px;
 }
 
-section.boostup .wrapper {
+.wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -301,31 +301,34 @@ section.boostup .wrapper img {
   height: auto;
   width: 90%;
 }
-
 section.boostup .wrapper .boostup-wrap{
   max-width: 400px;
+}
+.boostup-wrap{
+  max-width: 500px;
   padding: 5vmin;
   flex-grow: 1;
 }
 
-section.boostup .wrapper h1 {
+.boostup-wrap h1 {
   line-height: 110%;
   font-family: Poppins;
   margin-bottom: 30px;
 }
-section.boostup .wrapper p {
+.boostup-wrap p {
   margin-bottom: 30px;
   color: #7a7a7a;
   letter-spacing: 1px;
+  font-size: 1.1rem;
 }
-section.boostup .wrapper li {
+.boostup-wrap li {
   list-style: none;
   margin: 15px 0;
   display: flex;
   align-items: center;
   font-family: Poppins;
 }
-section.boostup .wrapper li > div {
+.boostup-wrap li > div {
   background-image: url(../assets/check.png);
   min-width: 24px;
   min-height: 24px;
@@ -333,8 +336,35 @@ section.boostup .wrapper li > div {
   background-size: contain;
   background-repeat: no-repeat;
 }
-section.boostup .wrapper li > span {
+.boostup-wrap li > span {
   font-family: Poppins;
   line-height: 110%;
   font-size: 0.9rem;
+}
+
+.card-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.adv-card {
+  max-width: 250px;
+  max-height: 300px;
+  margin: 15px 10px;
+  padding: 40px 25px;
+  border-radius: 15px;
+  background-color: var(--blue);
+  overflow: hidden;
+}
+.adv-card > * {
+  color: var(--lightgray);
+}
+.adv-card > h3 {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  margin: 15px 0;
 }
