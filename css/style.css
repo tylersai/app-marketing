@@ -451,3 +451,13 @@ section.boostup .wrapper .boostup-wrap{
   margin-top: 30px;
   text-transform: uppercase;
 }
+.price-card > h1.price {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.price-card > h1.price > span {
+  font-family: Poppins;
+  font-weight: 600 !important;
+  font-size: 32px;
+  vertical-align: 20%;
+}
