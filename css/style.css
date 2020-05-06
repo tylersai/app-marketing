@@ -409,6 +409,7 @@ section.boostup .wrapper .boostup-wrap{
   flex-grow: 1;
   align-self: stretch;
   padding: 1vw 2vw;
+  min-height: 550px;
 }
 
 .price-card {
@@ -430,7 +431,7 @@ section.boostup .wrapper .boostup-wrap{
 .price-card.yearly {
   z-index: 1;
   top: 40px;
-  left: 170px;
+  left: 13vw;
 }
 .price-card > * {
   font-family: Poppins;
@@ -463,4 +464,59 @@ section.boostup .wrapper .boostup-wrap{
   font-weight: 600 !important;
   font-size: 32px;
   vertical-align: 20%;
+}
+
+.phone {
+  display: inline-block;
+  letter-spacing: normal; 
+  font-weight: normal; 
+  font-size: 28px;
+  cursor: pointer;
+  transition: color 300ms ease-out;
+}
+.phone:hover {
+  color: var(--green);
+}
+
+input, textarea, select {
+  border: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: #fff;
+  font-size: 1rem;
+  font-family: Poppins;
+  padding: 10px 0;
+  border-radius: 0;
+}
+input:focus::placeholder, textarea:focus::placeholder{
+  color: transparent;
+}
+.contact-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-items: stretch;
+  padding: 2vw;
+  flex-basis: 50%;
+}
+.contact-wrap > * {
+  margin-top: 25px;
+  border-bottom: 2px solid #eee;
+  transition: all 300ms ease-out;
+}
+.contact-wrap > *:focus {
+  border-color: var(--green);
+}
+.contact-wrap input[type="submit"] {
+  border: none;
+  align-self: start;
+  margin-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+section.contact .boostup-wrap {
+  padding: 7vmin 5vmin;
 }
