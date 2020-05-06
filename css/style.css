@@ -552,6 +552,8 @@ footer {
 }
 
 .newsletter > input[type="submit"] {
+  font-weight: 600;
+  text-transform: uppercase;
   color: var(--white);
   padding: 10px 30px;
   border: none;
