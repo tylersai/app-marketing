@@ -250,12 +250,12 @@ section.feature h1 {
 
 .card > a {
   margin-top: 20px;
-  border: 1px solid #eee;
   border-radius: 5px;
   padding-top: 8px;
   padding-bottom: 8px;
 }
 .learn-more {
+  border: 1px solid #ddd;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -417,6 +417,10 @@ section.boostup .wrapper .boostup-wrap{
   height: 450px;
   box-shadow: #ddd 2px 2px 18px 2px;
   background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .price-card.monthly {
@@ -426,4 +430,24 @@ section.boostup .wrapper .boostup-wrap{
   z-index: 1;
   top: 30px;
   left: 150px;
+}
+.price-card > * {
+  font-family: Poppins;
+}
+.price-card > h3:first-child {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.price-card > .what-we-do {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  font-family: Poppins;
+  margin: 10px 0 30px 0;
+}
+.price-card > p {
+  margin: 5px 0;
+}
+.price-card > a.btn.learn-more {
+  margin-top: 30px;
+  text-transform: uppercase;
 }
