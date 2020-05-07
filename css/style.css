@@ -121,7 +121,6 @@ header nav > li:first-child {
 
 header nav .btn {
   border: 2px solid var(--white);
-  border-style: solid;
   color: var(--white);
 }
 
@@ -276,7 +275,7 @@ section.feature h1 {
   bottom: 0;
   opacity: 0;
   z-index: -1;
-  transition: all 300ms ease-in-out;
+  transition: inherit;
 }
 .learn-more:hover > span {
   opacity: 1;
@@ -302,10 +301,10 @@ section.boostup .wrapper img {
   height: auto;
   width: 90%;
 }
-section.boostup .wrapper .boostup-wrap{
+section.boostup .wrapper .boostup-wrap {
   max-width: 400px;
 }
-.boostup-wrap{
+.boostup-wrap {
   max-width: 500px;
   padding: 5vmin;
   flex-grow: 1;
@@ -346,7 +345,7 @@ section.boostup .wrapper .boostup-wrap{
 .card-wrap {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -470,8 +469,8 @@ section.boostup .wrapper .boostup-wrap{
 
 .phone {
   display: inline-block;
-  letter-spacing: normal; 
-  font-weight: normal; 
+  letter-spacing: normal;
+  font-weight: normal;
   font-size: 28px;
 }
 
@@ -483,8 +482,11 @@ section.boostup .wrapper .boostup-wrap{
   color: var(--green);
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   border: none;
+  outline: none;
   -webkit-appearance: none;
   -webkit-tap-highlight-color: #fff;
   font-size: 1rem;
@@ -492,7 +494,14 @@ input, textarea, select {
   padding: 10px 0;
   border-radius: 0;
 }
-input:focus::placeholder, textarea:focus::placeholder{
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+input:focus::placeholder,
+textarea:focus::placeholder {
   color: transparent;
 }
 .contact-wrap {
@@ -527,7 +536,7 @@ section.contact .boostup-wrap {
 }
 
 footer {
-  padding: 7vw 7vw 5vw 7vw;
+  padding: 7vw;
   background-color: #fafafa;
 }
 
@@ -601,7 +610,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: #8ddcdf 1px 1px 10px;
+  box-shadow: #dddddd 1px 1px 10px;
 }
 .fab > i {
   color: inherit;
