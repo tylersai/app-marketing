@@ -255,6 +255,15 @@ section.feature h1 {
   padding-top: 8px;
   padding-bottom: 8px;
 }
+
+.card > img {
+  transition: all 400ms 50ms cubic-bezier(.175,.885,.32,2);
+}
+
+.card > img:hover {
+  transform: scale(1.2);
+}
+
 .learn-more {
   border: 1px solid #ddd;
   position: relative;
