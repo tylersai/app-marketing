@@ -175,12 +175,12 @@
             resonable price.
           </p>
           <div class="ym-wrap">
-            <a href="#" class="btn reverse-gradient">Monthly</a>
-            <a href="#" class="btn">Yearly</a>
+            <a href="#" id="btn-monthly" class="btn selected" onclick="swapPriceCard(event)">Monthly</a>
+            <a href="#" id="btn-yearly" class="btn" onclick="swapPriceCard(event)">Yearly</a>
           </div>
         </div>
         <div class="price-wrap">
-          <div class="price-card monthly">
+          <div id="card-monthly" class="price-card monthly">
             <h3 class="text-darkgray">Personal</h3>
             <h3 class="what-we-do">Monthly Package</h3>
             <h1 class="price text-darkgray">$57<span>.99</span></h1>
@@ -190,7 +190,7 @@
             <p>Customer Managemet</p>
             <a href="#" class="btn learn-more"><span></span>Signup</a>
           </div>
-          <div class="price-card yearly">
+          <div id="card-yearly" class="price-card yearly">
             <h3 class="text-darkgray">Business</h3>
             <h3 class="what-we-do">Yearly Package</h3>
             <h1 class="price text-darkgray">$89<span>.99</span></h1>
@@ -269,5 +269,6 @@
     <a href="#top" class="fab reverse-gradient"
       ><i class="fa fa-angle-up fa-2x"></i
     ></a>
+    <script src="./js/index.js"></script>
   </body>
 </html>

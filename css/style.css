@@ -30,7 +30,7 @@ a {
     rgb(0, 215, 221)
   );
 }
-.reverse-gradient {
+.reverse-gradient, .selected {
   background-image: linear-gradient(
     to top right,
     rgb(8, 167, 221),
@@ -401,17 +401,21 @@ section.boostup .wrapper .boostup-wrap {
   padding-bottom: 10px;
   font-family: Poppins;
   text-transform: capitalize;
+  outline: none;
 }
 .ym-wrap > a.btn:first-child {
   border-right: none;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  color: var(--white);
 }
 .ym-wrap > a.btn:last-child {
   border-left: none;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+.ym-wrap > a.btn.selected {
+  color: var(--white);
 }
 
 .price-wrap {
@@ -433,6 +437,7 @@ section.boostup .wrapper .boostup-wrap {
   align-items: center;
   justify-content: center;
   padding: 4vw;
+  transition: all 200ms 0ms linear;
 }
 
 .price-card.monthly {
@@ -440,8 +445,9 @@ section.boostup .wrapper .boostup-wrap {
 }
 .price-card.yearly {
   z-index: 1;
-  top: 40px;
-  left: 13vw;
+  /* top: 40px;
+  left: 12vw; */
+  transform: translate(12vw, 40px);
 }
 .price-card > * {
   font-family: Poppins;
