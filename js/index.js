@@ -5,9 +5,9 @@ var cardYearly = document.getElementById("card-yearly");
 
 function swapPriceCard(event) {
   event.preventDefault();
-  if(!event.target.classList.contains("selected")) {
+  if (!event.target.classList.contains("selected")) {
     event.target.classList.add("selected");
-    if(event.target == btnMonthly) {
+    if (event.target == btnMonthly) {
       btnYearly.classList.remove("selected");
       cardMonthly.style.transform = "translate(0,0)";
       cardYearly.style.transform = "translate(12vw, 40px)";

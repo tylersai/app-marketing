@@ -7,6 +7,9 @@
   --blue: rgb(8, 167, 221);
   --green: rgb(0, 215, 221);
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   overflow-x: hidden;
 }
@@ -79,7 +82,7 @@ section:nth-child(even) {
   background-color: #fafafa;
 }
 section:nth-child(odd) {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 h1 {
